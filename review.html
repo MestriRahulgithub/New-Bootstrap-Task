@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .rating {
+            display: inline-block;
+            font-size: 24px;
+        }
+
+        .rating label {
+            color: #ffd700;
+            /* Set the star color to yellow */
+            cursor: pointer;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label:hover,
+        .rating label:hover~label,
+        .rating input:checked~label {
+            color: #ffcc00;
+            /* Change the star color on hover and for checked stars */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 ms-5" href="#">SMART WATCH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse right" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Review</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#about">About Us</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact US</a></li>
+                            <li><a class="dropdown-item" href="#review">Review</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="" id="review">
+        <h1 style="text-align: center;">Product Review</h1>
+
+    </div>
+    <div class="row gap-5 justify-content-center" style=" background-color: crimson;">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/17775091/pexels-photo-17775091/free-photo-of-close-up-of-a-smartwatch.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FASTRACK</h5>
+                        <p>Fire-Boltt Ninja Call Pro Plus 1.83" Smart Watch with Bluetooth Calling, AI Voice Assistance,
+                            100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.wbp0YAxJnMD5rZ7GYSdYtwHaEK&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">APPLE</h5>
+                        <p>the Apple Watch Series 5 if a motion gesture feature</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.81tj_uJMrF1wMkReaLVvWgHaEK&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FOSSIL</h5>
+                        <p>Visionary 1.78 AMOLED Bluetooth Calling Smartwatch with 368 * 448 Pixel</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.YIMUaYdtuMOKVCDE2l2B6wAAAA&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">GOOGLE</h5>
+                        <p>Google Pixel Watch comes in 1 variants: 32GB 2GB RAM</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse1.explicit.bing.net/th?id=OIP.zUtHTmIKPzAQp8-aYJp9DAHaE7&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ASIN</h5>
+                        <p>Smartwatche Google Pixel Watch zostaną oficjalnie zaprezentowane 6 października. Niedługo po
+                            tym ruszy przedsprzedaż nowych zegarków z Wear OS. </p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.sqQbewOqZPoOTUiCCGyTUgHaHa&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung</h5>
+                        <p>Smart Watch Phone for Android HTC Sony Samsung LG Google Pixel Pixel and iPhone 5 5S 6 6 Plus
+                            7 Smartphones Black</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/18259150/pexels-photo-18259150/free-photo-of-smartwatch-on-ground.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TITAN</h5>
+                        <p> HD Display Bluetooth Calling Smart Watch, 100+ Sports Modes, Heart Rate Monitoring, SpO2, AI
+                            Voice Assistant, IP68 - Black</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/110471/pexels-photo-110471.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">WALMART</h5>
+                        <p>Fire-Boltt Newly Launched Vogue Large 2.05" Display Smart Watch, Always On Display, Wireless
+                            Charging, App Based GPS with Bluetooth Calling & 500+ Watch Faces </p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

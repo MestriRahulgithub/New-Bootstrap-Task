@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        .card {
+            width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+            border-color: black;
+        }
+
+        .rating {
+            display: inline-block;
+            font-size: 24px;
+        }
+
+        .rating label {
+            color: #ffd700;
+            /* Set the star color to yellow */
+            cursor: pointer;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label:hover,
+        .rating label:hover~label,
+        .rating input:checked~label {
+            color: #ffcc00;
+            /* Change the star color on hover and for checked stars */
+        }
+
+        .navbar-nav>li>a:hover {
+            color: #fff !important;
+
+            background-color: #ffc800 !important;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 ms-5" href="#">SMART WATCH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse right" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Review</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#about">About Us</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact US</a></li>
+                            <li><a class="dropdown-item" href="#review">Review</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/1334602/pexels-photo-1334602.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    style="width: 40px; height: 500px;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    style="width: 40px; height: 500px;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/437036/pexels-photo-437036.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    style="width: 40px; height: 500px;" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    style="width: 40px; height: 500px;" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/6373220/pexels-photo-6373220.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    style="width: 40px; height: 500px;" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container" id="about" style="background-color: violet;">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.z825TrknRmH0fWdsQ096-QHaEK&pid=Api&P=0&h=180"
+                    style="width: 200px;" alt="Smartwatch Image" class="img-fluid">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.Kab5r7J_SX3yM6YxzS3L3AHaEI&pid=Api&P=0&h=180"
+                    style="width: 200px; margin: 20px; padding-bottom: 30px;" alt="Smartwatch Image" class="img-fluid">
+                <br>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.C4p1YJOhefVjV1dwvku2CwHaDL&pid=Api&P=0&h=180"
+                    style="width: 200px;  margin: 60px;" alt="Smartwatch Image" class="img-fluid">
+
+            </div>
+            <div class="col-md-6">
+                <h2>About Our Smartwatch</h2>
+                <p>
+                    A smartwatch is a wearable computer in the form of a watch; modern smartwatches provide a local
+                    touchscreen interface for daily use, while an associated smartphone app provides management and
+                    telemetry, such as long-term biomonitoring. While early models could perform basic tasks, such as
+                    calculations, digital time telling, translations, and game-playing, smartwatches released since 2015
+                    have more general functionality closer to smartphones, including mobile apps, a mobile operating
+                    system and WiFi/Bluetooth connectivity. Some smartwatches function as portable media players, with
+                    FM radio and playback of digital audio and video files via a Bluetooth headset. Some models, called
+                    watch phones (or phone watches), have mobile cellular functionality such as making telephone calls.
+                </p>
+                <p>
+                    In June 2000, IBM displayed a prototype for the WatchPad, a wristwatch that ran Linux. The original
+                    version had only 6 hours of battery life, which was later extended to 12.It featured 8 MB of
+                    memory and ran Linux 2.2.The device was later upgraded with an accelerometer, vibrating
+                    mechanism, and fingerprint sensor. IBM began to collaborate with Citizen Watch Co. to create the
+                    "WatchPad". The WatchPad 1.5 features aQVGA monochrome touch sensitive display and runs
+                    Linux.It also features calendar software, Bluetooth, 8 MB of RAM and 16 MB of flash
+                    memory.Citizen was hoping to market the watch to students and businessmen, with a retail
+                    price of around $399. Epson Seiko introduced their Chrono-bit wristwatch in September 2000. The
+                    Chrono-bit watches have a rotating bezel for data input, synchronize PIM data via a serial cable,
+                    and can load custom watch faces.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="" id="review">
+        <h1 style="text-align: center;">Product Review</h1>
+
+    </div>
+    <div class="row gap-5 justify-content-center" style=" background-color: crimson;">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/17775091/pexels-photo-17775091/free-photo-of-close-up-of-a-smartwatch.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FASTRACK</h5>
+                        <p>Fire-Boltt Ninja Call Pro Plus 1.83" Smart Watch with Bluetooth Calling, AI Voice Assistance,
+                            100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.wbp0YAxJnMD5rZ7GYSdYtwHaEK&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">APPLE</h5>
+                        <p>the Apple Watch Series 5 if a motion gesture feature</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.81tj_uJMrF1wMkReaLVvWgHaEK&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FOSSIL</h5>
+                        <p>Visionary 1.78 AMOLED Bluetooth Calling Smartwatch with 368 * 448 Pixel</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.YIMUaYdtuMOKVCDE2l2B6wAAAA&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">GOOGLE</h5>
+                        <p>Google Pixel Watch comes in 1 variants: 32GB 2GB RAM</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse1.explicit.bing.net/th?id=OIP.zUtHTmIKPzAQp8-aYJp9DAHaE7&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ASIN</h5>
+                        <p>Smartwatche Google Pixel Watch zostaną oficjalnie zaprezentowane 6 października. Niedługo po
+                            tym ruszy przedsprzedaż nowych zegarków z Wear OS. </p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.sqQbewOqZPoOTUiCCGyTUgHaHa&pid=Api&P=0&h=180"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung</h5>
+                        <p>Smart Watch Phone for Android HTC Sony Samsung LG Google Pixel Pixel and iPhone 5 5S 6 6 Plus
+                            7 Smartphones Black</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/18259150/pexels-photo-18259150/free-photo-of-smartwatch-on-ground.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TITAN</h5>
+                        <p> HD Display Bluetooth Calling Smart Watch, 100+ Sports Modes, Heart Rate Monitoring, SpO2, AI
+                            Voice Assistant, IP68 - Black</p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/110471/pexels-photo-110471.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        style="height:200px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">WALMART</h5>
+                        <p>Fire-Boltt Newly Launched Vogue Large 2.05" Display Smart Watch, Always On Display, Wireless
+                            Charging, App Based GPS with Bluetooth Calling & 500+ Watch Faces </p>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div>
+        <h1 style="text-align: center;">CONTACT INFORMATION</h1>
+    </div>
+
+    <div class="container" id="contact">
+        <div class="row" style="background-color: tomato;">
+            <div class="col-3">
+                <b>Contact</b>
+                <ul>
+                    <li class="list-group-item"><strong>Email:</strong> info@example.com</li>
+                    <li class="list-group-item"><strong>Phone:</strong> +1 (123) 456-7890</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <b>Map</b>
+                <ul>
+                    <p>
+                        <span class="glyphicon">&#xe062;</span>
+                        <a href="#"><u>Smart Watch Showroom</u></a>
+                    </p>
+                    <p>
+                        Details mentioned and Google link also
+                    </p>
+                </ul>
+            </div>
+            <div class="col-3">
+                <b>ADDRESS</b>
+                <ul>
+
+                    <li class="list-group-item"><strong>Address:</strong> <span style="color:black;">123 Main
+                            St,</span><span style="color:blue;">Banglore</span>
+                        <span style="color:black;">, Country</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <b>Openings</b>
+                <ul>
+                    <li class="list-group-item"><strong><span style="color: black;">Monday</span></strong></li>
+                    <li class="list-group-item"><strong><span style="color: black;">Wednesday</strong></li>
+                    <li class="list-group-item"><strong><span style="color: black;">Thrusday</span></strong></li>
+                    <li class="list-group-item"><strong><span style="color: black;">Friday</span></strong></li>
+                    <li class="list-group-item"><strong><span style="color: black;">Saturday</span></strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
